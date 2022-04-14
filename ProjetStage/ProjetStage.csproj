@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02D8A0F7-22FF-4058-A485-7956605D93EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetStage</RootNamespace>
+    <AssemblyName>ProjetStage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbonementCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbonementCrystal.Designer.cs">
+      <DependentUpon>AbonementCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abonnement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abonnement.Designer.cs">
+      <DependentUpon>Abonnement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="abonnementoffre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abonnementoffre.Designer.cs">
+      <DependentUpon>abonnementoffre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.cs" />
+    <Compile Include="Connecter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connecter.Designer.cs">
+      <DependentUpon>Connecter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTAL2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL2.Designer.cs">
+      <DependentUpon>CRYSTAL2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalAbonnemeNew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalAbonnemeNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystalabonnoffre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystalabonnoffre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalRepNewSal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalRepNewSal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystaltableaux.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crystaltableaux.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fixe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fixe.Designer.cs">
+      <DependentUpon>Fixe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrystalAbonem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrystalAbonem.Designer.cs">
+      <DependentUpon>FormCrystalAbonem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewsal.Designer.cs">
+      <DependentUpon>FormNewsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_des_personnelsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_des_personnelsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_des_personnelsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_des_personnelsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_des_personnelsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gestion_des_personnelsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grade.Designer.cs">
+      <DependentUpon>Grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="internet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="internet.Designer.cs">
+      <DependentUpon>internet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1.Designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mobile.Designer.cs">
+      <DependentUpon>Mobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offre.Designer.cs">
+      <DependentUpon>Offre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sal.Designer.cs">
+      <DependentUpon>Sal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalariéList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalariéList.Designer.cs">
+      <DependentUpon>SalariéList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AbonementCrystal.resx">
+      <DependentUpon>AbonementCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abonnement.resx">
+      <DependentUpon>Abonnement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="abonnementoffre.resx">
+      <DependentUpon>abonnementoffre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connecter.resx">
+      <DependentUpon>Connecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL2.resx">
+      <DependentUpon>CRYSTAL2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalAbonnemeNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalAbonnemeNew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystalabonnoffre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystalabonnoffre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalRepNewSal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalRepNewSal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystaltableaux.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crystaltableaux.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fixe.resx">
+      <DependentUpon>Fixe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrystalAbonem.resx">
+      <DependentUpon>FormCrystalAbonem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewsal.resx">
+      <DependentUpon>FormNewsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grade.resx">
+      <DependentUpon>Grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="internet.resx">
+      <DependentUpon>internet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mobile.resx">
+      <DependentUpon>Mobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offre.resx">
+      <DependentUpon>Offre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sal.resx">
+      <DependentUpon>Sal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalariéList.resx">
+      <DependentUpon>SalariéList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Gestion_des_personnelsDataSet.xsc">
+      <DependentUpon>Gestion_des_personnelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_des_personnelsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet.xss">
+      <DependentUpon>Gestion_des_personnelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet1.xsc">
+      <DependentUpon>Gestion_des_personnelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_des_personnelsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet1.xss">
+      <DependentUpon>Gestion_des_personnelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet2.xsc">
+      <DependentUpon>Gestion_des_personnelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gestion_des_personnelsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gestion_des_personnelsDataSet2.xss">
+      <DependentUpon>Gestion_des_personnelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-360x9999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65-651040_play-start-go-media-button-icon-led-backlit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajoutez-la-nouvelle-ic-ne-de-compte-utilisateur-style-simple-83217392.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifierUsers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icône-de-poubelle-bouton-suppression-illustration-editable-vecteur-ce-d-sur-le-fond-blanc-isolement-151782600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajoutez-la-nouvelle-ic-ne-de-compte-utilisateur-style-simple-832173921.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-de-vecteur-suppression-symbole-d-icône-panier-poubelle-isolement-sur-le-blanc-134397719.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-960531814-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-960531814-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-landline-icon-image_1130944.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40316.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\403161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4298146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86665.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\866651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1878037.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-sms-gateway-bulk-messaging-mobile-phones-text-messaging-sms-blue-angle-multimedia-messaging-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imprimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_25194541_lCELBdDKNlSrwVPF7pnzznbMkKu3FSlq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mot-de-passe-oublié-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-connexion-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trouver-l%27utilisateur-homme-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-groupe-d%27utilisateurs-homme-homme-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-groupe-d%27utilisateurs-homme-homme-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-le-compte-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supprimer-pour-toujours-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchroniser-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-groupe-d%27utilisateurs-homme-homme-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-le-compte-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supprimer-pour-toujours-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchroniser-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-le-compte-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supprimer-pour-toujours-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trouver-l%27utilisateur-homme-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vider-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchroniser-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-impression-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-impression-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-connexion-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-connexion-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-connexion-1003.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

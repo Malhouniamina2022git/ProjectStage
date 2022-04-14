@@ -1,0 +1,16 @@
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.AbonementCrystal.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Abonnement.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Connecter.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.CRYSTAL2.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Fixe.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.FormCrystalAbonem.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Grade.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.internet.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Menu1.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Mobile.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Offre.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Properties.Resources.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.Sal.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.SalariéList.resources
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\ProjetStage\ProjetStage\obj\Release\ProjetStage.csproj.CoreCompileInputs.cache
